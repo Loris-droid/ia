@@ -14,7 +14,7 @@ chatForm.addEventListener("submit", async (e) => {
 
   try {
     // Envoi au backend (API)
-    const response = await fetch("https://api.lorishuon.ovh/chat", {
+    const response = await fetch("https://api.lorishuon.ovh/ask", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message })
